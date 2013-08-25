@@ -1,0 +1,9 @@
+#!/usr/bin/env escript
+%% -*- erlang -*-
+
+-import(multiples).
+
+main([Args]) ->
+  io:format("Result: ~w", [multiples:run(list_to_integer(Args))]),
+  erlang:halt().
+
