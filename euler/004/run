@@ -1,0 +1,9 @@
+#!/usr/bin/env escript
+%% -*- erlang -*-
+
+-import(palindrome).
+
+main([Args]) ->
+  io:format("Result: ~w~n", [palindrome:run(list_to_integer(Args))]),
+  erlang:halt().
+

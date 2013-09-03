@@ -7,4 +7,3 @@ main([Args]) ->
   io:format("Result: ~w~n", [eratosthenes:run(list_to_integer(Args))]),
   erlang:halt().
 
-
